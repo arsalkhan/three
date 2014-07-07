@@ -1,0 +1,49 @@
+/*only for ie*/
+
+.property-search-container {
+	padding: 13px 0 0 0\0/;
+	width: 100%\0/;
+	float: left\0/;
+	/*height:115px\0/;*/
+	background: url(../images/seperator.jpg) top repeat-x\0/;
+	position: relative\0/;
+	z-index: 99\0/;
+}
+.property-search-container {
+	padding: 13px 0 0 0\9;
+	width: 100%\9;
+	float: left\9;
+	/*height:115px\9;*/
+	background: url(../images/seperator.jpg) top repeat-x\9;
+	position: relative\9;
+	z-index: 99\9;
+}
+/* For inline HTML images */
+
+img, .png { /* This requires a 1x1px transparent GIF image */
+	position: relative;
+	-ms-interpolation-mode: bicubic; /*If you scale down an image with width and/or height attributes, it's going to look terrible in IE unless you use this.*/
+ behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",  this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",  this.src = "images/transparent.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("', '').replace('")', ''),  this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",  this.runtimeStyle.backgroundImage = "none")), this.pngSet=true));
+}
+
+/* Fixed footer */
+/* uncomment to make footer fixed* html #footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+*/
+/*fixed positioning in ie 6*/
+* { margin:0; padding:0; }
+html, body {
+   height: 100%;
+}
+body #fixed-element {
+   position:fixed !important;
+   position: absolute; /*ie6 and above*/
+   top: 0;
+   right: 0;
+}
+#page-wrap {
+    margin: 0 auto; 
+    font: 16px/2 Georgia, Serif;
+}

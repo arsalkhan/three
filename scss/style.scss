@@ -1,0 +1,101 @@
+/* 
+ *						  /\ `/ /< /\ `/ _\~
+ *			  			  		Aykay's
+ *					for more info: http://arsalkhan.co
+ *
+ */
+
+
+ /*
+  The concept is inspired from Firebug's Style Inspector
+	*Typography
+	*Layout:
+		Box Model:
+			width
+			height
+			Padding:
+				padding-left
+				padding-right
+				padding-bottom
+				padding-top
+			Border:
+				border-left
+				border-right
+				border-bottom
+				border-top
+		Margin:
+			margin-left
+			margin-right
+			margin-bottom
+			margin-top
+		Position:
+			top
+			bottom
+			left
+			right
+	*Background
+		Gradient
+		Image
+		Size
+
+	*Others
+		Lists
+		Transitions
+
+
+
+  */
+
+// @import "compass";
+// @import "compass/typography/vertical_rhythm";
+// @import "compass/css3";
+// @import "compass/utilities";
+ @import "engine/engine";
+
+
+/*
+----------------------------------------------------------------------------------------------------------------------------------
+|| Vendor
+----------------------------------------------------------------------------------------------------------------------------------
+*/
+
+@import "vendor/h5bp";							// h5bp styles
+
+/* 
+----------------------------------------------------------------------------------------------------------------------------------
+|| Core
+----------------------------------------------------------------------------------------------------------------------------------
+*/
+
+@import "core/tags"; 					// sets all base tags' styles for a website
+@import "core/typography"; 				// sets all typographic styles
+@import "core/layout"; 					// sets how the main sections of the website appear
+@import "core/media";					// sets logo, icons, backgrounds, images and videos' styles
+@import "core/links"; 					// sets all links' styles
+@import "core/buttons"; 				// sets all buttons' styles
+@import "core/lists"; 					// sets all lists' styles
+@import "core/forms"; 					// sets all forms' styles
+@import "core/tables"; 					// sets all tables' styles
+@import "core/effects"; 				// sets all effects' styles
+@import "core/transitions"; 			// sets all transitions' styles
+
+
+
+
+/*
+----------------------------------------------------------------------------------------------------------------------------------
+|| Modules
+----------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+/* 
+----------------------------------------------------------------------------------------------------------------------------------
+|| Plugins
+----------------------------------------------------------------------------------------------------------------------------------
+ */
+
+

@@ -1,0 +1,27 @@
+
+
+/*
+----------------------------------------------------------------------------------------------------------------------------------
+``Tables' Styles */
+
+
+
+/* `general-styles*/
+
+
+.no-table-border {
+	border: 0 !important;
+}
+
+
+// Overriding the stripped view for table
+
+.table-striped tbody > tr:nth-child(odd) > td, .table-striped tbody > tr:nth-child(odd) > th {
+    background-color: #f3f2f2;
+}
+
+
+.vertical-align-middle {
+	vertical-align: middle;
+}
+

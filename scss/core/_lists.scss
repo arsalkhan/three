@@ -1,0 +1,61 @@
+
+/*
+----------------------------------------------------------------------------------------------------------------------------------
+``Lists' Styles */
+
+
+
+/*
+
+Different color of bullets:
+ MARKUP:
+
+ ul > li > span
+
+*/
+
+.list {
+	text-align: left;
+	padding-left: 0;
+	li {
+		list-style: square inside none;
+		color: $primary; 					//Bullet color
+		line-height: 1;
+	}
+	span {
+		color: $paragraph-color; 						//Text color
+		line-height: inherit;
+		@include font-size(12px);
+	}
+}
+.disc-styled {
+	li {
+		list-style-type: disc; 
+	}
+}
+
+.lists {
+	@include rf(margin-top, 30px);
+}
+
+// The above thing for Small Lists:
+
+// ul{
+// 	text-align: left;
+	
+// }
+// ul li {
+// list-style-type: none;
+// display: table;
+// }
+// ul li:before {
+// content: counter(item, square) " ";
+// color: $primary;
+// font-size:2rem;
+// position:relative;
+// top:.1em;
+// right: 1em; }
+// li:hover:before {
+//   color: black;
+// }
+

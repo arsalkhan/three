@@ -1,0 +1,104 @@
+// -------------------------------------
+//   `colors
+// -------------------------------------
+
+// Define your main colour palette
+
+//yellow
+$color1 										: #fab112; 
+
+//black
+$color2 										: #171717; 
+
+//gray
+$color3 										: #585858 ; 
+
+//white
+$color4 										: #ffffff; 
+
+//yellowish-orange
+$color5 										: #f7961d; 
+
+//theme color used for major things
+$primary										: $color1; 
+
+//secondary theme color
+$secondary										: $color2; 
+
+// main-backgroung on the whole site
+$main-bg-color 									: $color4;
+
+// sub-color for sub-text and other stuff
+$sub-color 										: $color3;
+
+
+// Assign colours to variable roles
+$heading-color									: $secondary;
+$paragraph-color								: $secondary;
+$sub-text-color 								: $sub-color;
+
+// ---------------------------------
+// 		`fonts
+// ---------------------------------
+
+// fontname MUST be the name of the folder in the fonts directory
+
+$font1 											: "aileron";
+$font2  										: "proxima_nova_black";
+
+// icon font:
+$fontawesome 									: 'fontawesome-webfont';
+$font-icon-color 								: $primary;
+
+$heading-font 									: $font2;
+$primary-font 									: $font1;
+
+//$fallback-font 									: $stmarie;
+
+
+// Fonts size and line height defaults for our calculations
+
+
+$root-font-size 								: 62.5%;				// Now 1rem = 10px. No headache :)
+$base-font-size									: 62.5%; 				// Now 1rem = 10px. No headache :)
+$base-line-height								: 8px;					// Baseline grid. Set to a sensible, small size.
+$round-to-nearest-half-line						: false;  				// Round the line height to the nearest half line height. Off by default
+
+
+// Font weights
+$light 											: 100;
+$regular 										: 400;
+$bold 											: 600;
+
+// Base Font
+$base-font-family 								: sans-serif;
+$base-font-weight 								: $regular;
+$base-font-size 								: 10px;
+$base-line-height 								: 1.4;
+
+// Fixed Font
+$fixed-font-family								: monospace;
+$fixed-font-size 								: 62.5%;
+$fixed-line-height 					 			: $base-line-height;
+
+// Headings
+$header-font-weight  							: $bold;
+
+// Responsive
+$lg 											: 1200;					// Large Screens
+$md 											: 992;					// Medium Desktops and Laptops
+$sm 											: 768;					// Respond Mixin's Default Tablet size
+$xs 											: 480; 					// Bootstrap Default Mobile-first approach
+
+//Dimensions
+$logo-width 									: 190px;
+$logo-height 									: 90px;
+
+// Transitions
+$trans1											: ease;
+$trans2											: ease2;
+
+$primary-transition 							: $trans1;
+
+
+

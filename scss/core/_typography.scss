@@ -1,0 +1,116 @@
+
+/*
+----------------------------------------------------------------------------------------------------------------------------------
+``Typography Styles */
+
+// You'll often get better results here if you work in numbers the divide into the baseline.
+// IE, if you have a baseline of 6px, multiples or divisions of often provide best results in ems 
+
+//---------------- ==Custom Selection Colors
+
+
+// mozilla firefox */
+::-moz-selection {
+  background      : $primary;
+  color         : $secondary;
+  text-shadow     : none;
+}
+
+// webkit, opera, IE9 */
+::selection {
+  background      : $primary;
+  color         : $secondary;
+  text-shadow     : none;
+}
+
+
+@include font-face;
+@include font-face($heading-font);
+
+// Google Chrome FontFix
+@-webkit-keyframes fontfix {
+  from { opacity: 1; }
+  to { opacity: 1; }
+}
+
+// Header cloasses
+
+.primary-title {
+	color: $primary;
+	// background: $secondary;
+}
+
+.secondary-title {
+	color: $primary;
+	// background: $secondary;
+  border: 1px solid #f79922; //#F0F0F0
+  @include rf(border-radius, 5px);
+  -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+       -o-transition: all .5s ease;
+          transition: all .5s ease;
+  &:hover {
+  	color: $secondary;
+  	border: 1px solid $secondary;
+  }
+
+  i {
+  	@include rf(margin-right,20px);
+  	-moz-border-radius-topleft: 5px;
+-webkit-border-top-left-radius: 5px;
+ border-top-left-radius: 5px;
+-moz-border-radius-bottomleft: 5px;
+-webkit-border-bottom-left-radius: 5px;
+border-bottom-left-radius: 5px;
+  }
+  @include respond(640) {
+	line-height: 2.3;
+}
+
+}
+
+.sub-text {
+	color: $sub-text-color;
+}
+
+.highlight {
+  color: $primary;
+}
+
+// Alignment:
+
+.txt-center {
+  text-align: center;
+}
+.txt-left {
+  text-align: left;
+}
+.txt-right {
+  text-align: right;
+}
+.txt-justify {
+  text-align: justify;
+}
+
+// hiding text
+.txt-invisible {
+  color: transparent;
+  &::selection {
+    color: transparent;
+    background: transparent;
+    text-shadow: none;
+  }
+  &::-moz-selection {
+    color: transparent;
+    background: transparent;
+    text-shadow: none;
+  }
+}
+
+.copyrights {
+  @include font-size(12px);
+  font-family: verdana;
+  color: $sub-color;
+}
+

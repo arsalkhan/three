@@ -1,0 +1,60 @@
+
+
+/*
+----------------------------------------------------------------------------------------------------------------------------------
+``Buttons' Styles */
+
+
+
+/* `general-styles*/
+
+.button {
+	@include rf(height, 40px);
+	@include rf(width, 320px);
+	@include rf(margin-top, 20px);
+	@include rf(margin-bottom, 20px);
+	@include rf(padding, 10px);
+	text-align: center;
+	color: $color4;
+	.fa {
+		color: $color4;
+		&:hover {
+			color: $color4 !important;
+		}
+	}
+	&:hover {
+		// background: $color4;
+			color: $color4 !important;
+	}
+}
+
+.button-rounded {
+	padding-left: 2rem; 
+	padding-right: 2rem;
+	border-radius: 0.5rem;
+	// display: inline-block;
+	&:hover {
+	text-decoration: none;
+	}
+}
+/* `theme-styles */
+
+.primary-btn {
+	background: #fff;
+	&:hover {
+		color: $primary;
+	}
+}
+
+.secondary-btn {
+	color: #fff;
+	padding: 0.5rem 2.5rem;
+	margin: 0 auto;
+	font-size: 1.5rem;
+    &:hover {
+	background: $secondary;
+	}
+}
+
+
+

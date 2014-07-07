@@ -1,0 +1,624 @@
+
+
+
+/*
+----------------------------------------------------------------------------------------------------------------------------------
+``Tag Styles */
+
+
+html {
+	font-size: $root-font-size;
+ 	font-family: $primary-font;
+ 	color: $paragraph-color;
+ 	@include respond {
+ 	font-size: $root-font-size*1.1; 				// Increase the size of everything by 12% on tablets
+	line-height: 2;
+ 	} 
+	 // @include respond($md) {
+	 // font-size: $root-font-size*1.2; 				// Increase the size of everything by 14% on desktops
+	 // }
+	 // @include respond($lg) {
+	 // font-size: $root-font-size*1.3; 				// Increase the size of everything by 16% on large screens
+	 // }
+ }
+
+
+//------------------------ `Structure
+
+article
+{	
+
+}
+
+aside
+{
+
+}
+
+bdi
+{
+
+}
+
+body
+{
+	font-family: verdana, sans-serif; //Otherwise bootstrap will use Helvetica
+	-webkit-animation-duration: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0.1s;
+// -webkit-text-stroke: 1px rgba(0,0,0,0.1);
+-webkit-font-smoothing: antialiased;
+}
+
+command
+{
+
+}
+
+details
+{
+
+}
+
+dialog
+{
+
+}
+
+div
+{
+
+}
+
+figcaption
+{
+
+}
+
+figure
+{
+
+}
+
+footer
+{
+
+}
+
+header
+{
+
+}
+
+
+mark
+{
+	color: $primary;
+	background-color: transparent;
+}
+
+meter
+{
+
+}
+
+nav
+{
+
+}
+
+progress
+{
+
+}
+
+rp
+{
+
+}
+
+rt
+{
+
+}
+
+ruby
+{
+
+}
+
+section       
+{
+
+}
+
+span
+{
+
+}
+
+summary
+{
+
+}
+
+time                     
+{
+
+}
+
+wbr
+{
+
+}
+
+//------------------------ `eStructure
+
+
+
+//------------------------ `sText
+
+abbr
+{
+
+}
+
+acronym
+{
+
+}
+
+address
+{
+
+}
+
+bdo
+{
+
+}
+
+blockquote
+{
+
+}
+
+br
+{
+
+}
+
+cite
+{
+
+}
+
+code
+{
+
+}
+
+del
+{
+
+}
+
+dfn
+{
+
+}
+
+em
+{
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $heading-font;
+	color: $heading-color;
+}
+
+h1 { 
+	@include font-size(22px); 
+} 
+			
+h2 { 
+	@include font-size(20px); 
+}
+
+h3 { 
+	@include font-size(18px); 
+} 
+
+h4 { 
+	@include font-size(17px); 
+} 
+
+h5 { 
+	@include font-size(16px); 
+} 
+
+h6 { 
+	@include font-size(15px); 
+} 	
+
+p, pre, label { 
+	@include font-size(14px); 
+}
+
+ol, ul {
+	@include font-size(13px); 
+}
+
+li {
+	line-height: auto;
+}
+
+p {
+	text-align: justify; 			// On narrow screens, justified text looks good
+	line-height: 1.4;
+	font-family: $primary-font;
+	@include font-size(12px); 
+
+	// letter-spacing: 1px;
+	@include respond {
+		text-align: left;
+	}
+}
+
+ins
+{
+
+}
+
+kbd
+{
+
+}
+
+p
+{
+
+}
+
+pre
+{
+
+}
+
+q
+{
+
+}
+
+samp
+{
+
+}
+
+strong, b 	{ font-weight: 600; }
+em, i, q 	{ font-style: italic; }
+
+var
+{
+
+}
+
+//------------------------  `Links
+
+
+a
+{
+	color: $primary;
+	text-decoration: none;
+	@include rf(padding, 2px); 		/* increase touchable area */
+	@include rf(margin, -2px); 		/* increase touchable area */
+	
+	&:visited {
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: $secondary;
+	}
+
+	&:active {
+		text-decoration: none;
+		color: $secondary;
+	}
+
+	&:focus {
+	background: transparent;
+	outline: none;
+}
+
+}
+
+
+base
+{
+
+}
+
+//------------------------  `Images and Objects
+
+
+
+area
+{
+
+}
+
+audio
+{
+
+}
+
+canvas
+{
+
+}
+
+embed
+{
+
+}
+
+img
+{
+	max-width: 100%; //makes all images responsive	
+	max-height: 100%; //makes all images responsive	
+    vertical-align: middle; // Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+}
+
+map
+{
+
+}
+
+object
+{
+
+}
+
+param
+{
+
+}
+
+source
+{
+
+}
+
+track
+{
+
+}
+
+video
+{
+
+}
+
+//------------------------  `Lists
+
+
+
+dd
+{
+
+}
+
+dl
+{
+
+}
+
+dt
+{
+
+}
+
+li
+{
+
+}
+
+ol
+{
+
+}
+
+ul
+{
+}
+
+//------------------------  `Tables
+
+
+
+caption
+{
+
+}
+
+col
+{
+
+}
+
+colgroup
+{
+
+}
+
+table
+{
+
+}
+
+tbody
+{
+
+}
+
+td
+{
+
+}
+
+tfoot
+{
+
+}
+
+th
+{
+
+}
+
+thead
+{
+
+}
+
+tr
+{
+
+}
+
+//------------------------  `Forms
+
+
+
+button
+{
+
+}
+
+datalist
+{
+
+}
+
+fieldset
+{
+	 border: 0;
+	 margin: 0;
+	 padding: 0; // Remove default fieldset styles h5bp.
+}
+
+form
+{
+
+}
+
+input
+{
+
+}
+
+keygen
+{
+
+}
+
+label
+{
+
+}
+
+legend
+{
+
+}
+
+optgroup
+{
+
+}
+
+option
+{
+
+}
+
+output
+{
+
+}
+
+select
+{
+
+}
+
+textarea
+{
+    resize: none; // Disable resizing of textareas.
+    overflow: hidden;
+	@include rf(height, 100px);
+}
+
+//------------------------  `Scripting
+
+
+noscript
+{
+
+}
+
+script
+{
+
+}
+
+//------------------------  `Presentational
+
+
+b
+{
+
+}
+
+i
+{
+
+}
+
+tt
+{
+
+}
+
+sub
+{
+
+}
+
+sup
+{
+
+}
+
+big 
+{
+
+}
+
+small
+{
+
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px dashed $primary;
+    margin: 1em 0;
+    padding: 0;
+}

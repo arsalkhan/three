@@ -1,0 +1,187 @@
+
+
+/*
+----------------------------------------------------------------------------------------------------------------------------------
+``Layout Styles */
+
+// // Without it Bootstrap Grid wont work
+
+// * {
+//   -webkit-box-sizing: border-box;
+//   -moz-box-sizing: border-box;
+//   box-sizing: border-box;
+// }
+// *:before,
+// *:after {
+//   -webkit-box-sizing: border-box;
+//   -moz-box-sizing: border-box;
+//   box-sizing: border-box;
+// }
+
+
+// General Layout classes
+
+
+// Alignment
+
+.center-block {
+  display: block;
+  margin: auto;
+}
+
+.center-tabled {
+    margin: auto;
+  display: table;
+
+}
+
+// Can and mostly used for centering child images
+.center-by-text-align { 
+text-align: center;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.pull-down {
+  @include rf(margin-top, 40px);
+}
+
+// Display:
+
+.block {
+  display: block;
+}
+
+.table-disply {
+  display: table;
+}
+.table-cell-display {
+  display: table-cell;
+}
+
+
+// Width:
+
+.full-width {
+  width: 100%;
+}
+
+.narrow {
+   width:75%;
+   margin:auto;
+}
+
+// Rotation:
+
+.rotate-left {
+  -webkit-transform: rotate(180deg);
+     -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+
+//--------------Shapes
+
+.rounded-rectangle {
+  background: $primary;
+  @include rf(border-radius, 5px);
+  @include rf(padding, 10px);
+  color: $color4;
+  & + a {
+     @include rf(margin-top, 10px);
+  }
+}
+
+
+
+/* `site-header*/
+.header {
+background: $secondary;
+.fa:hover {
+  color: $color4;
+}
+}
+
+/* `main-navigation*/
+.main-nav {
+  overflow: hidden;
+  a {
+      // border-left: 1px solid transparent;
+    // font-family: $heading-font !important;
+    letter-spacing: 1px;
+    @include font-size(12px);
+    text-transform: uppercase;
+    @include transit;
+    &:focus, &:active {
+      background: none;
+      outline: none;
+    }
+    @include respond {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      padding-bottom: 5px;
+      border-bottom: 3px solid $secondary;
+      margin: 5px !important;
+}
+    // @include rf(padding, 5px);
+    &:hover {
+      // border-left: 1px solid $primary;
+    @include respond {
+      padding-bottom: 5px;
+      border-bottom: 3px solid $color4;
+      }
+    }
+  }
+  li {
+    text-align: center;
+  }
+  @include respond {
+    margin: auto;
+    @include rf(width, 430px);
+    a:hover {
+      color: $color4;
+      background: none !important;
+    }
+  }
+  @include respond($md) {
+    @include rf(margin-top, -71px);
+    @include rf(margin-right, -55px);
+    float: right;
+  }
+
+}
+
+
+.nav>li>a:hover, .nav>li>a:focus {
+  background: none;
+}
+
+/* `main body*/
+.main {
+
+}
+
+/* `site-sidebar */
+
+.sidebar {
+
+}
+
+/* `site-footer */
+
+.footer {
+  background: $secondary;
+  @include rf(padding-top, 20px);
+  @include rf(padding-bottom, 20px);
+  @include rf(font-size, 9px);
+  text-align: center;
+}
+
