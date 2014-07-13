@@ -33,32 +33,31 @@
 
 <p>Three is a SASS Framework for fast UX development. It's Modular CSS approach is way easier than any other current frameworks. It includes a lot of useful mixins that makes development a cheese cake. It's in the development process and any genius's contribution in development will be highly appreciated.</p>
 
-<pre><code>It consists of following folders:
+<p>It consists of following folders:
 engine - controls all the includes of partial files
 core - contains all core styles of the web
 modules - files that all websites do not require
-vendor - vendor styles like fontawesome and bootstrap
-</code></pre>
+vendor - vendor styles like fontawesome and bootstrap</p>
 
 <h3>
 <a name="engine" class="anchor" href="#engine"><span class="octicon octicon-link"></span></a>engine</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>As the name describes, this directory contains all the files that are required to make this framework work. These files should not be edited unless you want to add some new feeatures e.g., mixins, in the framework. Only one partial file i.e., '_variables.scss' needs to be edited according to new project, e.g., colors.</p>
 
 <h3>
 <a name="core" class="anchor" href="#core"><span class="octicon octicon-link"></span></a>core</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>All the project related styles are defined here. It contains many files, one for each major part in website, e.g., typography, buttons, forms, layout, etc.</p>
 
 <h3>
 <a name="modules" class="anchor" href="#modules"><span class="octicon octicon-link"></span></a>modules</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>Modules are the files that are not required by all websites, e.g., every website does not need to be print friendly, so you can remove the print module.</p>
 
 <h3>
 <a name="vendor" class="anchor" href="#vendor"><span class="octicon octicon-link"></span></a>vendor</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>This directory contains files by different vendors, the files that you do not need to edit, just include them and they will be added to your main css file, e.g., fontawesome.scss</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/arsalkhan">arsalkhan</a></p>
